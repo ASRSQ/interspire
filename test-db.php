@@ -1,8 +1,13 @@
 <?php
-$mysqli = new mysqli("interspire_db", "root", "", "interspire_db");
+$host = 'interspire_db';
+$user = 'root';
+$pass = '';  // Se você definiu uma senha, insira aqui
+$dbname = 'interspire_db';
 
-if ($mysqli->connect_error) {
-    die("Erro de conexão: " . $mysqli->connect_error);
+$mysqli = new mysqli($host, $user, $pass, $dbname);
+
+if ($mysqli->connect_errno) {
+    die("Erro de conexão ({$mysqli->connect_errno}): {$mysqli->connect_error}");
 }
 
 echo "Conexão bem-sucedida!";
