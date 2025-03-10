@@ -1,7 +1,7 @@
 <?php
 $host = '172.18.0.3';
 $user = 'root';
-$pass = '';  // Se você definiu uma senha, insira aqui
+$pass = 'root';  // Se você definiu uma senha, insira aqui
 $dbname = 'interspire_db';
 
 $mysqli = new mysqli($host, $user, $pass, $dbname);
