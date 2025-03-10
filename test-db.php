@@ -1,5 +1,5 @@
 <?php
-$host = 'interspire_db';
+$host = '172.18.0.3';
 $user = 'root';
 $pass = '';  // Se você definiu uma senha, insira aqui
 $dbname = 'interspire_db';
